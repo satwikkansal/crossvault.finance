@@ -1,31 +1,11 @@
-# yearn.finance
+# crossvault.finance
 
-<img src="https://img.shields.io/badge/dynamic/json.svg?style=plastic&color=2096F3&label=locize&query=%24.translatedPercentage&url=https://api.locize.app/badgedata/1c6d6900-5989-49fe-b221-0001423041d2&suffix=%+translated&link=https://www.locize.com" />
-
+UI Forked from yearn.finane
 ## Contributing
 
 Code style follows prettier conventions (`yarn prettier`). Commit messages follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) spec.
 
-### Initial Setup
-
-- Fork the [original repo](https://github.com/yearn/yearn-finance-v3/) into your GitHub account
-- Clone the forked repo from your GitHub account to your local machine
-
-  ```
-  git clone https://github.com/<your-gh>/yearn-finance-v3.git
-  ```
-
-- Set origin to your fork. This is where you push your changes to. This is done automatically by the step above.
-
-  ```
-  git remote add origin https://github.com/<your-gh>/yearn-finance-v3
-  ```
-
-- Set upstream to original repo.
-
-  ```
-  git remote add upstream https://github.com/yearn/yearn-finance-v3.git
-  ```
+## Instructions
 
 - Create `.env` file in root directory of repo then copy contents of `.env.example` to `.env`
   ```
