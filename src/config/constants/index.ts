@@ -73,7 +73,7 @@ const NETWORK_SETTINGS: NetworkSettings = {
     id: 'arbitrum',
     name: 'Arbitrum',
     networkId: 42161,
-    rpcUrl: 'https://arb1.arbitrum.io/rpc',
+    rpcUrl: 'https://arb1.arbitrum.io/rpc ',
     nativeCurrency: {
       name: 'Ethereum',
       symbol: 'ETH',
@@ -103,7 +103,7 @@ export const getConstants = memoize((): Constants => {
     WEB3_PROVIDER_HTTPS: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
     WEB3_PROVIDER_WSS: `wss://eth-mainnet.ws.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
     FANTOM_PROVIDER_HTTPS: 'https://rpc.ftm.tools',
-    ARBITRUM_PROVIDER_HTTPS: 'https://arb1.arbitrum.io/rpc',
+    ARBITRUM_PROVIDER_HTTPS: 'https://arb1.arbitrum.io/rpc ',
     CONTRACT_ADDRESSES: {
       zapIn: '0x8E52522E6a77578904ddd7f528A22521DC4154F5',
       zapOut: '0xd6b88257e91e4E4D4E990B3A858c849EF2DFdE8c',

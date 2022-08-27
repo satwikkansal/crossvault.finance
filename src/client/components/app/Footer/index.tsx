@@ -136,7 +136,7 @@ export const Footer = ({ className }: FooterProps) => {
 
   return (
     <StyledFooter className={className}>
-      <LinkSection>
+      {/* <LinkSection>
         {footerLinks.map((footerLink) => (
           <StyledLink external to={footerLink.link} key={footerLink.name}>
             {t(`footer.links.${footerLink.name}`)}
@@ -150,7 +150,7 @@ export const Footer = ({ className }: FooterProps) => {
             <StyledIcon Component={social.icon} />
           </StyledIconLink>
         ))}
-      </SocialSection>
+      </SocialSection> */}
     </StyledFooter>
   );
 };

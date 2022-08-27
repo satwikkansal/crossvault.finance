@@ -232,32 +232,11 @@ export const Vaults = () => {
 
   return (
     <ViewContainer>
-      <StyledSliderCard
-        header={t('vaults:banner.header')}
-        Component={
-          <Text>
-            <p>{t('vaults:banner.desc')}</p>
-          </Text>
-        }
-        background={<img src={GoblinTown} alt={'Goblin town or the Citadel?'} />}
-      />
-
       <SummaryCard items={summaryCardItems} cardSize="small" />
       {opportunitiesLoading && <SpinnerLoading flex="1" width="100%" />}
 
       {!opportunitiesLoading && (
         <>
-          <StyledRecommendationsCard
-            header={t('components.recommendations.header')}
-            items={recommendations.map(({ displayName, displayIcon, apyData, apyType, address }) => ({
-              icon: displayIcon,
-              name: displayName,
-              info: formatApy(apyData, apyType),
-              infoDetail: 'EYY',
-              onAction: () => history.push(`/vault/${address}`),
-            }))}
-          />
-
           {!generalLoading && !walletIsConnected && <StyledNoWalletCard />}
 
           <DeprecatedCard

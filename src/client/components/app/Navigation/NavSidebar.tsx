@@ -176,7 +176,8 @@ export const NavSidebar = ({ navLinks, ...props }: NavSidebarProps) => {
   return (
     <StyledSidebar collapsed={collapsedSidebar}>
       <SidebarHeader>
-        <StyledLogo full={!collapsedSidebar} onClick={() => history.push('/portfolio')} />
+        <h2 style={{ textDecoration: 'underline', fontWeight: 'bold', fontSize: '1.5em' }}>CrossVault</h2>
+        {/* <StyledLogo full={!collapsedSidebar} onClick={() => history.push('/portfolio')} /> */}
         {/* {!isMobile && <ToggleSidebarButton Component={CollapseIcon} onClick={toggleSidebar} />} */}
       </SidebarHeader>
 
