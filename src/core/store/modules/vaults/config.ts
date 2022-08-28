@@ -15,7 +15,7 @@ export const vaultConfig = [
     depositsDisabled: false,
     withdrawalsDisabled: false,
     hideIfNoDeposits: false,
-    apyData: '0.0004004822104823891',
+    apyData: '0.0005004822104823891',
     apyType: 'v2:averaged',
     apyMetadata: {
       type: 'v2:averaged',
@@ -187,7 +187,7 @@ export const vaultConfig = [
     depositsDisabled: false,
     withdrawalsDisabled: false,
     hideIfNoDeposits: false,
-    apyData: '0.0004004822104823891',
+    apyData: '0.0007004822104823891',
     apyType: 'v2:averaged',
     apyMetadata: {
       type: 'v2:averaged',
@@ -297,7 +297,7 @@ export const vaultFilterConfig = [
     depositsDisabled: false,
     withdrawalsDisabled: false,
     hideIfNoDeposits: false,
-    apyData: '0.0004004813879399105',
+    apyData: '0.0005004813879399105',
     apyType: 'v2:averaged',
     apyMetadata: {
       type: 'v2:averaged',
@@ -461,7 +461,7 @@ export const vaultFilterConfig = [
     depositsDisabled: false,
     withdrawalsDisabled: false,
     hideIfNoDeposits: false,
-    apyData: '0.0004004813879399105',
+    apyData: '0.0007004813879399105',
     apyType: 'v2:averaged',
     apyMetadata: {
       type: 'v2:averaged',
