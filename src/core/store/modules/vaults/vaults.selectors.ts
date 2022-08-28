@@ -19,7 +19,7 @@ import { toBN } from '@utils';
 
 import { createToken } from '../tokens/tokens.selectors';
 
-import { vaultConfig } from './config';
+import { vaultConfig, vaultFilterConfig } from './config';
 import { initialVaultActionsStatusMap } from './vaults.reducer';
 
 /* ---------------------------------- State --------------------------------- */
@@ -99,15 +99,16 @@ const selectDeprecatedVaults = createSelector([selectVaults], (vaults): VaultVie
   return deprecatedVaults.filter((vault) => toBN(vault.userDeposited).gt(0));
 });
 
-const selectDepositedVaults = createSelector([selectLiveVaults], (vaults): VaultView[] => {
+const selectDepositedVaults = createSelector([selectLiveVaults], (vaults) => {
   const depositVaults = vaults.map(({ DEPOSIT, token, ...rest }) => ({ token, ...DEPOSIT, ...rest }));
   return depositVaults.filter((vault) => toBN(vault.userDeposited).gt(0));
 });
 
 const selectVaultsOpportunities = createSelector([selectLiveVaults], (vaults): VaultView[] => {
-  const depositVaults = vaults.map(({ DEPOSIT, token, ...rest }) => ({ token, ...DEPOSIT, ...rest }));
-  const opportunities = depositVaults.filter((vault) => toBN(vault.userDeposited).lte(0));
-  return opportunities;
+  // const depositVaults = vaults.map(({ DEPOSIT, token, ...rest }) => ({ token, ...DEPOSIT, ...rest }));
+  // const opportunities = depositVaults.filter((vault) => toBN(vault.userDeposited).lte(0));
+  // return opportunities;
+  return vaultFilterConfig;
 });
 
 const selectSelectedVaultActionsStatusMap = createSelector(

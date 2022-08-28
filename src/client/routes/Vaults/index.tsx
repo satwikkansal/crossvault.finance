@@ -250,7 +250,7 @@ export const Vaults = () => {
 
           {!generalLoading && !walletIsConnected && <StyledNoWalletCard />}
 
-          <DeprecatedCard
+          {/* <DeprecatedCard
             header={t('components.list-card.deprecated')}
             metadata={[
               {
@@ -325,7 +325,7 @@ export const Vaults = () => {
             onAction={({ address }) => history.push(`/vault/${address}`)}
             initialSortBy="userDepositedUsdc"
             wrap
-          />
+          /> */}
 
           {!depositsLoading && (
             <DepositsCard

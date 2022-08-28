@@ -473,19 +473,6 @@ export const Labs = () => {
         <u>How it works</u>
       </b>
       <img src="https://i.postimg.cc/sDYssyWc/Screenshot-2022-08-28-at-7-35-04-AM.png" />
-      <b>
-        <u>Contract Deployments</u>
-      </b>
-
-      <p> Avalanche </p>
-      <ul>
-        <li></li>
-      </ul>
-
-      <p> Avalanche </p>
-      <ul>
-        <li></li>
-      </ul>
     </ViewContainer>
   );
 };
