@@ -166,7 +166,8 @@ export const Portfolio = () => {
   };
 
   const filterDustTokens = (item: { balanceUsdc: string }) => {
-    return parseInt(item.balanceUsdc) > parseInt(DUST_AMOUNT_USD);
+    return true;
+    // return parseInt(item.balanceUsdc) > parseInt(DUST_AMOUNT_USD);
   };
 
   return (
