@@ -277,7 +277,7 @@ export const Labs = () => {
 
   return (
     <ViewContainer>
-      {!opportunitiesLoading && currentNetworkSettings.labsEnabled && (
+      {/* {!opportunitiesLoading && currentNetworkSettings.labsEnabled && (
         <StyledSliderCard
           header={t('labs:risks-card.header')}
           Component={
@@ -288,18 +288,16 @@ export const Labs = () => {
             </Text>
           }
         />
-      )}
-
-      <SummaryCard
+      )} */}
+      {/* <SummaryCard
         items={[
           { header: t('dashboard.holdings'), Component: <Amount value={totalDeposits} input="usdc" /> },
           { header: t('dashboard.est-yearly-earnings'), Component: <Amount value={totalEarnings} input="usdc" /> },
           { header: t('dashboard.est-yearly-yield'), content: `${formatApy(estYearlyYield)}` },
         ]}
         cardSize="small"
-      />
-
-      {opportunitiesLoading && <SpinnerLoading flex="1" width="100%" />}
+      /> */}
+      {/* {opportunitiesLoading && <SpinnerLoading flex="1" width="100%" />}
 
       {!opportunitiesLoading && (
         <>
@@ -470,7 +468,24 @@ export const Labs = () => {
             />
           )}
         </>
-      )}
+      )} */}
+      <b>
+        <u>How it works</u>
+      </b>
+      <img src="https://i.postimg.cc/sDYssyWc/Screenshot-2022-08-28-at-7-35-04-AM.png" />
+      <b>
+        <u>Contract Deployments</u>
+      </b>
+
+      <p> Avalanche </p>
+      <ul>
+        <li></li>
+      </ul>
+
+      <p> Avalanche </p>
+      <ul>
+        <li></li>
+      </ul>
     </ViewContainer>
   );
 };

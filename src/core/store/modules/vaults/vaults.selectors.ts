@@ -19,6 +19,7 @@ import { toBN } from '@utils';
 
 import { createToken } from '../tokens/tokens.selectors';
 
+import { vaultConfig } from './config';
 import { initialVaultActionsStatusMap } from './vaults.reducer';
 
 /* ---------------------------------- State --------------------------------- */
@@ -152,7 +153,10 @@ const selectRecommendations = createSelector([selectLiveVaults], (vaults) => {
   const sortedVaults = [...vaults].sort((a, b) => {
     return toBN(b.apyData).minus(a.apyData).toNumber();
   });
-  return sortedVaults.slice(0, 3);
+  console.log('Sorted Vaults are');
+  console.log(sortedVaults);
+  // return sortedVaults.slice(0, 3);
+  return vaultConfig;
 });
 
 const selectVault = createSelector(

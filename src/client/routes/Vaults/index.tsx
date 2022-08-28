@@ -237,6 +237,17 @@ export const Vaults = () => {
 
       {!opportunitiesLoading && (
         <>
+          <StyledRecommendationsCard
+            header={t('components.recommendations.header')}
+            items={recommendations.map(({ displayName, displayIcon, apyData, apyType, address }) => ({
+              icon: displayIcon,
+              name: displayName,
+              info: formatApy(apyData, apyType),
+              infoDetail: 'EYY',
+              onAction: () => history.push(`/vault/${address}`),
+            }))}
+          />
+
           {!generalLoading && !walletIsConnected && <StyledNoWalletCard />}
 
           <DeprecatedCard

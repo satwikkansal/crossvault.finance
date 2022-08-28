@@ -35,7 +35,7 @@
     },
     "no-wallet": "Wallet not connected",
     "recommendations": {
-      "header": "Highest APY"
+      "header": "Participate in vaults"
     },
     "search-input": {
       "search": "Search"
@@ -153,7 +153,7 @@
     },
     "disclaimer": "Disclaimer",
     "ironbank": "Iron Bank",
-    "labs": "Labs",
+    "labs": "Info",
     "portfolio": "Portfolio",
     "settings": "Settings",
     "vault": "Vaults",

@@ -31,6 +31,12 @@ const navLinks: NavigationLink[] = [
     icon: VaultIcon,
   },
   {
+    to: '/labs',
+    text: 'navigation.labs',
+    icon: LabsIcon,
+    optional: true,
+  },
+  {
     to: '/settings',
     text: 'navigation.settings',
     icon: SettingsIcon,
